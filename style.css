@@ -1,31 +1,87 @@
-header{
+/* header{
     grid-area: head;
-    text-align: center;
-    font-size: x-large;
-    color: white;
     }
-nav{
+    nav{
     grid-area: nav;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     }
-main{
+    main{
+        display: grid;
         grid-area: main;
+       
     }
-footer{
+    footer{
         grid-area: footer;
-        text-align: center;
-        font-size: x-large;
-        color: white;
     }
-body{
+    body{
     display: grid;
     height: 100vh;
     grid-template-areas: "head head"
     "nav main"
     "nav main"
     "footer footer";
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 50px 50px 1fr 30px;
+    grid-template-columns: 500px 1fr ;
+    grid-template-rows: 1fr 50px 1fr 30px;
+} */
+
+
+body{
+    display:grid;
+    grid-template-columns: 200px,repeat(3,600px);
+    grid-template-rows: 4;
+}
+
+header{
+    display: grid;
+    grid-row:1;
+    grid-column: 1/5;
+    border-style: solid;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
+
+nav{
+    grid-column: 1;
+    grid-row: 2/4;
+    border-style:solid;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main{
+    display:grid;
+    grid-column:2/5;
+    grid-row: 2/4;
+}
+
+footer{
+    display: grid;
+    grid-row: 4;
+    grid-column: 1/5;
+    border-style: solid;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
+
+.row1{
+    grid-column: 2/5;
+    grid-row: 1;
+}
+
+.col-1{
+    display:grid;
+    grid-column:2;
+}
+
+.col-2{
+    display: grid;
+    grid-column:2;
+}
+
+.col-3{
+    display:grid;
+    grid-column:3;
 }
