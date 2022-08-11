@@ -1,21 +1,25 @@
 header{
     grid-area: head;
     text-align: center;
+    font-size: x-large;
+    color: white;
     }
-    nav{
+nav{
     grid-area: nav;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     }
-    main{
+main{
         grid-area: main;
     }
-    footer{
+footer{
         grid-area: footer;
         text-align: center;
+        font-size: x-large;
+        color: white;
     }
-    body{
+body{
     display: grid;
     height: 100vh;
     grid-template-areas: "head head"
