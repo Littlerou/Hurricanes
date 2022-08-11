@@ -1,14 +1,19 @@
 header{
     grid-area: head;
+    text-align: center;
     }
     nav{
     grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     }
     main{
         grid-area: main;
     }
     footer{
         grid-area: footer;
+        text-align: center;
     }
     body{
     display: grid;
@@ -17,6 +22,6 @@ header{
     "nav main"
     "nav main"
     "footer footer";
-    grid-template-columns: 500px 1fr;
-    grid-template-rows: 1fr 50px 1fr 30px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 50px 50px 1fr 30px;
 }
