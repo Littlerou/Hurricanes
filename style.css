@@ -1,11 +1,13 @@
-header{
+/* header{
     grid-area: head;
     }
     nav{
     grid-area: nav;
     }
     main{
+        display: grid;
         grid-area: main;
+       
     }
     footer{
         grid-area: footer;
@@ -17,6 +19,53 @@ header{
     "nav main"
     "nav main"
     "footer footer";
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 500px 1fr ;
     grid-template-rows: 1fr 50px 1fr 30px;
 }
+ */
+
+body{
+    display:grid;
+    grid-template-columns: 200px,repeat(3,600px);
+    grid-template-rows: 3;
+}
+
+header{
+    display: grid;
+    grid-row:1;
+    grid-column: 1/5;
+    border-style: solid;
+}
+
+nav{
+    grid-column: 1;
+    grid-row: 2/4;
+    border-style:solid;
+}
+
+main{
+    display:grid;
+    grid-column:2/5;
+    grid-row: 2/4;
+}
+
+.row1{
+    grid-column: 2/5;
+    grid-row: 1;
+}
+
+.col-1{
+    display:grid;
+    grid-column:2;
+}
+
+.col-2{
+    display: grid;
+    grid-column:2;
+}
+
+.col-3{
+    display:grid;
+    grid-column:3;
+}
+
