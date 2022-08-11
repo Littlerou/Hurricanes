@@ -85,3 +85,13 @@ footer{
     display:grid;
     grid-column:3;
 }
+
+.card{
+    margin: 20px;
+    border-style:solid;
+    border-color: #198754;
+    border-width: 15px;
+    justify-content: center;
+    
+    
+}
